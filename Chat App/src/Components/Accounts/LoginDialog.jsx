@@ -82,11 +82,13 @@ const LoginDialog = () => {
     >
       <Component>
         <Container>
-          <Title>To use WhatsApp Web Clone:</Title>
+          <Title>To use this WhatsApp Web Application:</Title>
           <StyledList>
-            <ListItem>1. Kindly Sign In using your Google Account.</ListItem>
             <ListItem>
-              2. Click on the button above QR code to Sign In.
+              1. Click on the button above QR code to Sign In.
+            </ListItem>
+            <ListItem>
+              2. Sign In using your Google Account and start Messaging.
             </ListItem>
             <ListItem>
               3. Scan the QR code to share the link of this app.

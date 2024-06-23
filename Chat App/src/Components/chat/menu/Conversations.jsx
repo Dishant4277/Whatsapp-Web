@@ -44,8 +44,6 @@ const Conversations = ({ text, setMobileRight }) => {
     });
   }, [account]);
 
-  console.log(users.length);
-
   return (
     <Component>
       {users?.length > 0 ? (

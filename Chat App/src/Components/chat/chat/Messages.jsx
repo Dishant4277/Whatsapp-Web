@@ -119,8 +119,6 @@ const Messages = ({ person, conversation, loading, messages, setMessages }) => {
     setNewMessageFlag((prev) => !prev);
   };
 
-  console.log(messages, "123");
-
   return (
     <Wrapper>
       <Component>
