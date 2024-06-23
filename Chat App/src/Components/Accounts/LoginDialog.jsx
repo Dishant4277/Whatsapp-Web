@@ -25,7 +25,7 @@ const Component = styled(Box)`
 `;
 
 const QRCOde = styled("img")({
-  margin: mobile ? "20px 10px 0 10px" : "50px 10px 0 10px",
+  margin: mobile ? "15px 10px 0 10px" : "50px 10px 0 10px",
   height: 264,
   width: 264,
 });
@@ -36,7 +36,7 @@ const Container = styled(Box)`
 
 const Title = styled(Typography)`
   font-size: 26px;
-  margin-bottom: 25px;
+  margin-bottom: ${mobile ? "25px" : "0"};
   color: #525252;
   font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
     Cantarell, Fira Sans, sans-serif;
@@ -85,7 +85,7 @@ const LoginDialog = () => {
           <Title>To use this WhatsApp Web Application:</Title>
           <StyledList>
             <ListItem>
-              1. Click on the button above QR code to Sign In.
+              1. Click on the button below QR code to Sign In.
             </ListItem>
             <ListItem>
               2. Sign In using your Google Account and start Messaging.
@@ -100,7 +100,7 @@ const LoginDialog = () => {
           <Box
             style={{
               position: "absolute",
-              top: "50%",
+              top: "100%",
               transform: "translateX(45%) translateY(-25%)",
             }}
           >
