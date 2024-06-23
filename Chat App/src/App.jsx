@@ -6,7 +6,7 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import UserProvider from "./context/UserProvider";
 import AccountProvider from "./context/AccountProvider";
 
-import Loader from "./components/loader/Loader";
+import Loader from "./Components/loader/Loader";
 
 const Messenger = lazy(() => import("./components/Messenger"));
 
