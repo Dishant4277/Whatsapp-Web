@@ -24,6 +24,7 @@ const Today = styled(Typography)`
   align-items: center;
   margin: auto;
   padding: 0 3px;
+  margin-bottom: 10px;
   border-radius: 5px;
   word-break: normal;
 `;

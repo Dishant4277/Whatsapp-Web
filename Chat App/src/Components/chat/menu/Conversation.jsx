@@ -98,9 +98,7 @@ const Conversation = ({ user, setMobileRight }) => {
           )}
         </Container>
         <Box>
-          <Text>
-            {message?.text?.includes("http") ? "media" : message.text}
-          </Text>
+          <Text>{message?.type === "file" ? "media file" : message.text}</Text>
         </Box>
       </Box>
     </Component>
