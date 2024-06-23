@@ -36,7 +36,7 @@ const Container = styled(Box)`
 
 const Title = styled(Typography)`
   font-size: 26px;
-  margin-bottom: ${mobile ? "25px" : "0"};
+  margin-bottom: ${!mobile ? "25px" : "0"};
   color: #525252;
   font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
     Cantarell, Fira Sans, sans-serif;
@@ -101,7 +101,7 @@ const LoginDialog = () => {
             style={{
               position: "absolute",
               top: "100%",
-              transform: "translateX(45%) translateY(-25%)",
+              transform: "translateX(30%) translateY(-25%)",
             }}
           >
             <GoogleLogin

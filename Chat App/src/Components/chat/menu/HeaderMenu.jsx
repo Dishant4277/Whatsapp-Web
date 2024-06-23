@@ -21,6 +21,8 @@ const HeaderMenu = () => {
     setShowloginButton,
     showlogoutButton,
     setShowlogoutButton,
+    socket,
+    setActiveUsers,
   } = useContext(AccountContext);
   const { setPerson } = useContext(UserContext);
 
@@ -73,6 +75,11 @@ const HeaderMenu = () => {
               handleClose();
               googleLogout();
               onSignoutSuccess();
+              socket.current.emit("disconnect", () => {
+                socket.current.on("getUsers", (users) => {
+                  setActiveUsers(users);
+                });
+              });
             }}
           >
             Logout
