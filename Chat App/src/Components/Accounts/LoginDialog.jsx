@@ -1,5 +1,5 @@
 import { Dialog, Typography, List, ListItem, Box, styled } from "@mui/material";
-import { qrCodeImage } from "../../constants/data";
+import qrCodeImage from "../../assets/QrCode.png";
 import { GoogleLogin } from "@react-oauth/google";
 import jwt_decode from "jwt-decode";
 import { useContext } from "react";
